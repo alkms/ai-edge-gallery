@@ -148,15 +148,15 @@ class LlmChatTask @Inject constructor() : CustomTask {
   }
 }
 
-@Module
-@InstallIn(SingletonComponent::class) // Or another component that fits your scope
-internal object LlmChatTaskModule {
-  @Provides
-  @IntoSet
-  fun provideTask(): CustomTask {
-    return LlmChatTask()
-  }
-}
+// @Module
+// @InstallIn(SingletonComponent::class) // Or another component that fits your scope
+// internal object LlmChatTaskModule {
+//   @Provides
+//   @IntoSet
+//   fun provideTask(): CustomTask {
+//     return LlmChatTask()
+//   }
+// }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ask image.
@@ -231,15 +231,15 @@ class LlmAskImageTask @Inject constructor() : CustomTask {
   }
 }
 
-@Module
-@InstallIn(SingletonComponent::class) // Or another component that fits your scope
-internal object LlmAskImageModule {
-  @Provides
-  @IntoSet
-  fun provideTask(): CustomTask {
-    return LlmAskImageTask()
-  }
-}
+// @Module
+// @InstallIn(SingletonComponent::class) // Or another component that fits your scope
+// internal object LlmAskImageModule {
+//   @Provides
+//   @IntoSet
+//   fun provideTask(): CustomTask {
+//     return LlmAskImageTask()
+//   }
+// }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Ask audio.
@@ -315,12 +315,12 @@ class LlmAskAudioTask @Inject constructor() : CustomTask {
   }
 }
 
-@Module
-@InstallIn(SingletonComponent::class) // Or another component that fits your scope
-internal object LlmAskAudioModule {
-  @Provides
-  @IntoSet
-  fun provideTask(): CustomTask {
-    return LlmAskAudioTask()
-  }
-}
+// @Module
+// @InstallIn(SingletonComponent::class) // Or another component that fits your scope
+// internal object LlmAskAudioModule {
+//   @Provides
+//   @IntoSet
+//   fun provideTask(): CustomTask {
+//     return LlmAskAudioTask()
+//   }
+// }
