@@ -22,12 +22,12 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dagger.multibindings.IntoSet
 
-@Module
-@InstallIn(SingletonComponent::class)
-internal object TinyGardenTaskModule {
-  @Provides
-  @IntoSet
-  fun provideTask(): CustomTask {
-    return TinyGardenTask()
-  }
-}
+// @Module
+// @InstallIn(SingletonComponent::class)
+// internal object TinyGardenTaskModule {
+//   @Provides
+//   @IntoSet
+//   fun provideTask(): CustomTask {
+//     return TinyGardenTask()
+//   }
+// }
