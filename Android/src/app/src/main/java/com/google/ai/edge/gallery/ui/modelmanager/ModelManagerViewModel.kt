@@ -221,7 +221,7 @@ constructor(
   }
 
   fun getActiveCustomTasks(): List<CustomTask> {
-    return customTasks.toList()
+    return customTasks.filter { it.task.id == BuiltInTaskId.LLM_AGENT_CHAT }.toList()
   }
 
   fun getSelectedModel(): Model? {
